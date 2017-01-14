@@ -9,7 +9,7 @@ from ..utils import KeyDefaultDict
 from . import Proc
 
 
-logger = getLogger(__name__)
+logger = getLogger('hirefire')
 
 
 class CeleryInspector(KeyDefaultDict):
