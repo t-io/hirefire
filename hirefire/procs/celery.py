@@ -20,8 +20,8 @@ class CeleryInspector(KeyDefaultDict):
     def __init__(self, app, simple_queues=False):
         super(CeleryInspector, self).__init__(self.get_status_task_counts)
         self.app = app
+        self.simple_queues = simple_queues
         self.route_queues = None
-        self.simple_queues = False
 
     @classmethod
     def simple_queues(cls, *args, **kwargs):
